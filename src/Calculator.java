@@ -82,7 +82,7 @@ public class Calculator {
             }else{
                 button.setBackground(customDarkGray);
             }
-            button.setForeground(Color.white);
+            button.setForeground(Color.WHITE);
 
             buttonsPanel.add(button);
 
@@ -117,7 +117,7 @@ public class Calculator {
                     }
                     if(operator != null && buttonValue.equals("=")) {
                         B = displayLabel.getText();
-                        double answer = Math.round(calculate(operator, A, B));
+                        double answer = calculate(operator, A, B);
                         displayLabel.setText(removeZeroDecimal(answer));
                         A = displayLabel.getText();
                         B = null;
