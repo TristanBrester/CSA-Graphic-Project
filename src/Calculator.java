@@ -76,13 +76,13 @@ public class Calculator {
             button.setFocusable(false);
 
             if(Arrays.asList(topThree).contains(buttonValue)) {
-                button.setBackground(customOrange);
+                button.setBackground(customLightGray);
             }else if(Arrays.asList(rightSide).contains(buttonValue)) {
                 button.setBackground(customOrange);
             }else{
                 button.setBackground(customDarkGray);
             }
-            button.setForeground(Color.WHITE);
+            button.setForeground(Color.white);
 
             buttonsPanel.add(button);
 
